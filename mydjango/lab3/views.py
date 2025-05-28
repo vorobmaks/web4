@@ -58,5 +58,8 @@ def team_delete(request, pk):
 
     return HttpResponseForbidden("Forbidden: Invalid request method.")
 
+def react_view(request):
+    return render(request, 'react.html')
+
 def spa_view(request):
-    return render(request, 'index.html')
+    return render(request, 'spa.html')
